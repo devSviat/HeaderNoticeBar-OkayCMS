@@ -1,0 +1,22 @@
+{
+  "Okay": "4.5.2",
+  "version": "1.0.0",
+  "moduleName": "Header Notice Bar",
+  "vendor": {
+    "site": "https://github.com/devSviat"
+  },
+  "modifications": {
+    "front": [
+      {
+        "file": "index.tpl",
+        "changes": [
+          {
+            "find": "<header class=\"header\">",
+            "childrenFind": "{if $is_mobile == false || $is_tablet == true}",
+            "appendBefore": "header_notice_bar.tpl"
+          }
+        ]
+      }
+    ]
+  }
+}

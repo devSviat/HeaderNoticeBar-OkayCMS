@@ -1,0 +1,31 @@
+<?php
+
+$lang['sviat_left_header_notice_bar'] = 'Объявление';
+$lang['sviat_header_notice_bar_title'] = 'Панель объявлений';
+$lang['sviat_header_notice_bar_add'] = 'Добавить объявление';
+$lang['sviat_header_notice_bar_new'] = 'Новое объявление';
+$lang['sviat_header_notice_bar_name'] = 'Название';
+$lang['sviat_header_notice_bar_content'] = 'Контент';
+$lang['sviat_header_notice_bar_position'] = 'Позиция';
+$lang['sviat_header_notice_bar_background_type'] = 'Тип фона';
+$lang['sviat_header_notice_bar_background_type_color'] = 'Цвет';
+$lang['sviat_header_notice_bar_background_type_gradient'] = 'Градиент';
+$lang['sviat_header_notice_bar_background_color'] = 'Цвет фона';
+$lang['sviat_header_notice_bar_background_gradient'] = 'Градиент фона';
+$lang['sviat_header_notice_bar_text_color'] = 'Цвет текста';
+$lang['sviat_header_notice_bar_text_color_hint'] = 'Если не указано, цвет текста можно задать в редакторе контента';
+$lang['sviat_header_notice_bar_publish_from'] = 'Публиковать с';
+$lang['sviat_header_notice_bar_publish_to'] = 'Публиковать до';
+$lang['sviat_header_notice_bar_publish_dates'] = 'Дата публикации';
+$lang['sviat_header_notice_bar_from'] = 'С';
+$lang['sviat_header_notice_bar_to'] = 'По';
+$lang['sviat_header_notice_bar_always'] = 'Всегда';
+$lang['sviat_header_notice_bar_delete'] = 'Удалить баннер';
+$lang['sviat_header_notice_bar_delete_confirm'] = 'Вы уверены, что хотите удалить этот баннер?';
+$lang['sviat_header_notice_bar_added'] = 'Баннер добавлен';
+$lang['sviat_header_notice_bar_updated'] = 'Баннер обновлён';
+$lang['sviat_header_notice_bar_no_items'] = 'Баннеров нет';
+$lang['sviat_header_notice_bar_gradient_color_from'] = 'Цвет градиента (с)';
+$lang['sviat_header_notice_bar_gradient_color_to'] = 'Цвет градиента (до)';
+$lang['sviat_header_notice_bar_custom_gradient'] = 'Кастомный градиент';
+$lang['sviat_header_notice_bar_gradient_hint'] = 'Например: linear-gradient(90deg, #0c467a 0%, #1da7c9 45%, #0c467a 100%)';

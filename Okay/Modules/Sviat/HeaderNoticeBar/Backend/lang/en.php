@@ -1,0 +1,31 @@
+<?php
+
+$lang['sviat_left_header_notice_bar'] = 'Notice';
+$lang['sviat_header_notice_bar_title'] = 'Notice Bar';
+$lang['sviat_header_notice_bar_add'] = 'Add Notice';
+$lang['sviat_header_notice_bar_new'] = 'New Notice';
+$lang['sviat_header_notice_bar_name'] = 'Name';
+$lang['sviat_header_notice_bar_content'] = 'Content';
+$lang['sviat_header_notice_bar_position'] = 'Position';
+$lang['sviat_header_notice_bar_background_type'] = 'Background type';
+$lang['sviat_header_notice_bar_background_type_color'] = 'Color';
+$lang['sviat_header_notice_bar_background_type_gradient'] = 'Gradient';
+$lang['sviat_header_notice_bar_background_color'] = 'Background color';
+$lang['sviat_header_notice_bar_background_gradient'] = 'Background gradient';
+$lang['sviat_header_notice_bar_text_color'] = 'Text color';
+$lang['sviat_header_notice_bar_text_color_hint'] = 'If not specified, the text color can be set in the content editor';
+$lang['sviat_header_notice_bar_publish_from'] = 'Publish from';
+$lang['sviat_header_notice_bar_publish_to'] = 'Publish to';
+$lang['sviat_header_notice_bar_publish_dates'] = 'Publication date';
+$lang['sviat_header_notice_bar_from'] = 'From';
+$lang['sviat_header_notice_bar_to'] = 'To';
+$lang['sviat_header_notice_bar_always'] = 'Always';
+$lang['sviat_header_notice_bar_delete'] = 'Delete banner';
+$lang['sviat_header_notice_bar_delete_confirm'] = 'Are you sure you want to delete this banner?';
+$lang['sviat_header_notice_bar_added'] = 'Banner added';
+$lang['sviat_header_notice_bar_updated'] = 'Banner updated';
+$lang['sviat_header_notice_bar_no_items'] = 'No banners';
+$lang['sviat_header_notice_bar_gradient_color_from'] = 'Gradient color (from)';
+$lang['sviat_header_notice_bar_gradient_color_to'] = 'Gradient color (to)';
+$lang['sviat_header_notice_bar_custom_gradient'] = 'Custom gradient';
+$lang['sviat_header_notice_bar_gradient_hint'] = 'For example: linear-gradient(90deg, #0c467a 0%, #1da7c9 45%, #0c467a 100%)';

@@ -1,0 +1,32 @@
+.header_notice_bar {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.header_notice_bar__content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header_notice_bar__content p {
+    margin: 0;
+}
+
+.header_notice_bar__content a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.header_notice_bar__content a:hover {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    body.has-header-notice-bar .main {
+        padding-top: 84px;
+    }
+}
