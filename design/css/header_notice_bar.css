@@ -1,3 +1,32 @@
+.header_notice_bar_carousel {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    display: grid;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.header_notice_bar_carousel.header_notice_bar_carousel_ready {
+    opacity: 1;
+}
+
+.header_notice_bar_carousel__slide {
+    grid-area: 1 / 1;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.header_notice_bar_carousel__slide.header_notice_bar_carousel__slide_active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .header_notice_bar {
     width: 100%;
     padding: 8px 0;
@@ -23,10 +52,4 @@
 
 .header_notice_bar__content a:hover {
     text-decoration: none;
-}
-
-@media only screen and (max-width: 767px) {
-    body.has-header-notice-bar .main {
-        padding-top: 84px;
-    }
 }

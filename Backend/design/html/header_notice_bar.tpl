@@ -18,6 +18,46 @@
     </div>
 </div>
 
+{* Налаштування *}
+<div class="boxed fn_toggle_wrap">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="heading_box">
+                {$btr->sviat_header_notice_bar_settings|escape}
+            </div>
+            <form method="post" class="fn_fast_button">
+                <input type="hidden" name="session_id" value="{$smarty.session.id}">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="form_group">
+                            <label class="form_label">{$btr->sviat_header_notice_bar_display_mode|escape}</label>
+                            <select name="header_notice_bar_display_mode" class="form-control">
+                                <option value="sequence"{if $header_notice_bar_display_mode == 'sequence'} selected{/if}>{$btr->sviat_header_notice_bar_display_mode_sequence|escape}</option>
+                                <option value="random"{if $header_notice_bar_display_mode == 'random'} selected{/if}>{$btr->sviat_header_notice_bar_display_mode_random|escape}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="form_group">
+                            <label class="form_label">{$btr->sviat_header_notice_bar_interval_minutes|escape}</label>
+                            <input type="number" name="header_notice_bar_interval_minutes" class="form-control" value="{$header_notice_bar_interval_minutes|escape}" min="1" max="1440" step="1">
+                            <small class="form_text">{$btr->sviat_header_notice_bar_interval_minutes_hint|escape}</small>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <div class="form_group" style="padding-top: 28px;">
+                            <button type="submit" class="btn btn_small btn_blue">
+                                {include file='svg_icon.tpl' svgId='checked'}
+                                <span>{$btr->sviat_header_notice_bar_save_settings|escape}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 {*Головна форма сторінки*}
 <div class="boxed fn_toggle_wrap">
     {if $banners}

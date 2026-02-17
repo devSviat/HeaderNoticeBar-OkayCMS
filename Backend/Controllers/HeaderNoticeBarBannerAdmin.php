@@ -31,6 +31,11 @@ class HeaderNoticeBarBannerAdmin extends IndexAdmin
                     $this->postRedirectGet->storeMessageError('Помилка при додаванні банера');
                 }
             } else {
+                $existing = $bannersEntity->get($banner->id);
+                if (!$existing) {
+                    $this->response->redirectTo($this->request->url(['controller' => 'HeaderNoticeBarAdmin']));
+                    return;
+                }
                 $banner->updated_at = date('Y-m-d H:i:s');
                 $result = $bannersEntity->update($banner->id, (array)$banner);
                 if ($result) {

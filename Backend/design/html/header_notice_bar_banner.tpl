@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 {if $smarty.get.return}
-                    <a class="alert__button" href="{$smarty.get.return}">
+                    <a class="alert__button" href="{$smarty.get.return|escape:'url'}">
                         {include file='svg_icon.tpl' svgId='return'}
                         <span>{$btr->general_back|escape}</span>
                     </a>
@@ -46,7 +46,7 @@
 
 {*Головна форма сторінки*}
 <form method="post" enctype="multipart/form-data" class="fn_fast_button">
-    <input type=hidden name="session_id" value="{$smarty.session.id}">
+    <input type="hidden" name="session_id" value="{$smarty.session.id}">
     <input type="hidden" name="lang_id" value="{$lang_id}" />
     <input name="id" type="hidden" value="{$banner->id|escape}" />
     <div class="row">

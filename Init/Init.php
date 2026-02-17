@@ -11,7 +11,11 @@ use Okay\Modules\Sviat\HeaderNoticeBar\Extenders\FrontExtender;
 
 class Init extends AbstractInit
 {
-    const PERMISSION = 'sviat__header_notice_bar';
+    private const PERMISSION = 'sviat__header_notice_bar';
+    public const SETTING_DISPLAY_MODE = 'sviat_header_notice_bar_display_mode';
+    public const SETTING_INTERVAL_MINUTES = 'sviat_header_notice_bar_interval_minutes';
+    public const DISPLAY_MODE_RANDOM = 'random';
+    public const DISPLAY_MODE_SEQUENCE = 'sequence';
 
     public function install()
     {
@@ -45,7 +49,7 @@ class Init extends AbstractInit
         $this->addBackendControllerPermission('HeaderNoticeBarBannerAdmin', self::PERMISSION);
 
         $this->registerQueueExtension(
-            [MainHelper::class, 'commonAfterControllerProcedure'],
+            [MainHelper::class, 'commonBeforeControllerProcedure'],
             [FrontExtender::class, 'assignCurrentBanners']
         );
 
