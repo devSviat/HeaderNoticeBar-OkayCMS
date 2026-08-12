@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 require_once __DIR__ . '/Support/RequestStub.php';
 
-use Support\RequestStub;
+use Modules\Sviat\HeaderNoticeBar\Support\RequestStub;
 
 /**
  * Збір банера з форми адмінки. Кольори й градієнти звідси йдуть просто в

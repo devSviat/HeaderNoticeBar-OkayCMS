@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
 
 require_once __DIR__ . '/Support/SuperglobalIsolation.php';
 
-use Support\SuperglobalIsolation;
+use Modules\Sviat\HeaderNoticeBar\Support\SuperglobalIsolation;
 
 /**
  * Вибір банера, який побачить відвідувач. Позиція в ротації зберігається в

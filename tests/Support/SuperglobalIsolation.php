@@ -1,6 +1,6 @@
 <?php
 
-namespace Support;
+namespace Modules\Sviat\HeaderNoticeBar\Support;
 
 /**
  * Знімає й відновлює суперглобали навколо тесту.

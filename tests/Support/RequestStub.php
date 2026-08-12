@@ -1,6 +1,6 @@
 <?php
 
-namespace Support;
+namespace Modules\Sviat\HeaderNoticeBar\Support;
 
 use Okay\Core\Request;
 
