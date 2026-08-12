@@ -1,9 +1,8 @@
 {
   "Okay": "4.5.2",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "moduleName": "Header Notice Bar",
   "vendor": {
-    "email": "devsviat@proton.me",
     "site": "https://github.com/devSviat"
   },
   "modifications": {
@@ -12,7 +11,8 @@
         "file": "index.tpl",
         "changes": [
           {
-            "find": "{* Header top *}",
+            "find": "<header class=\"header\">",
+            "childrenFind": "{if $is_mobile == false || $is_tablet == true}",
             "appendBefore": "header_notice_bar.tpl"
           }
         ]
