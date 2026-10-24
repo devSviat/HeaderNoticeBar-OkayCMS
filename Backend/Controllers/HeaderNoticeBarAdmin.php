@@ -26,8 +26,8 @@ class HeaderNoticeBarAdmin extends IndexAdmin
 
             $ids = $this->request->post('check');
             if (is_array($ids)) {
-                $ids = array_map('intval', $ids);
-                $ids = array_filter($ids, function ($id) { return $id > 0; });
+                $ids = array_map(intval(...), $ids);
+                $ids = array_filter($ids, fn($id) => $id > 0);
                 $action = $this->request->post('action');
                 switch ($action) {
                     case 'disable':

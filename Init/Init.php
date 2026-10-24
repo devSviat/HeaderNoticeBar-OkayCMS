@@ -11,7 +11,7 @@ use Okay\Modules\Sviat\HeaderNoticeBar\Extenders\FrontExtender;
 
 class Init extends AbstractInit
 {
-    private const PERMISSION = 'sviat__header_notice_bar';
+    private const string PERMISSION = 'sviat__header_notice_bar';
     public const SETTING_DISPLAY_MODE = 'sviat_header_notice_bar_display_mode';
     public const SETTING_INTERVAL_MINUTES = 'sviat_header_notice_bar_interval_minutes';
     public const DISPLAY_MODE_RANDOM = 'random';
@@ -22,20 +22,20 @@ class Init extends AbstractInit
         $this->setBackendMainController('HeaderNoticeBarAdmin');
 
         $this->migrateEntityTable(HeaderNoticeBarEntity::class, [
-            (new EntityField('id'))->setIndexPrimaryKey()->setTypeInt(11, false)->setAutoIncrement(),
-            (new EntityField('name'))->setTypeVarchar(255)->setIsLang(),
-            (new EntityField('content'))->setTypeText()->setIsLang(),
-            (new EntityField('background_type'))->setTypeVarchar(20)->setDefault('color'),
-            (new EntityField('background_color'))->setTypeVarchar(7)->setDefault('#ffffff'),
-            (new EntityField('background_gradient'))->setTypeVarchar(500)->setNullable(),
-            (new EntityField('gradient_color_from'))->setTypeVarchar(7)->setNullable(),
-            (new EntityField('gradient_color_to'))->setTypeVarchar(7)->setNullable(),
-            (new EntityField('visible'))->setTypeTinyInt(1, true)->setDefault(1)->setIndex(),
-            (new EntityField('position'))->setTypeInt(11)->setDefault(0)->setIndex(),
-            (new EntityField('publish_from'))->setTypeDatetime(true),
-            (new EntityField('publish_to'))->setTypeDatetime(true),
-            (new EntityField('created_at'))->setTypeDatetime(false),
-            (new EntityField('updated_at'))->setTypeDatetime(false),
+            new EntityField('id')->setIndexPrimaryKey()->setTypeInt(11, false)->setAutoIncrement(),
+            new EntityField('name')->setTypeVarchar(255)->setIsLang(),
+            new EntityField('content')->setTypeText()->setIsLang(),
+            new EntityField('background_type')->setTypeVarchar(20)->setDefault('color'),
+            new EntityField('background_color')->setTypeVarchar(7)->setDefault('#ffffff'),
+            new EntityField('background_gradient')->setTypeVarchar(500)->setNullable(),
+            new EntityField('gradient_color_from')->setTypeVarchar(7)->setNullable(),
+            new EntityField('gradient_color_to')->setTypeVarchar(7)->setNullable(),
+            new EntityField('visible')->setTypeTinyInt(1, true)->setDefault(1)->setIndex(),
+            new EntityField('position')->setTypeInt(11)->setDefault(0)->setIndex(),
+            new EntityField('publish_from')->setTypeDatetime(true),
+            new EntityField('publish_to')->setTypeDatetime(true),
+            new EntityField('created_at')->setTypeDatetime(false),
+            new EntityField('updated_at')->setTypeDatetime(false),
         ]);
 
         $this->registerEntityLangInfo(HeaderNoticeBarEntity::class, 'sviat__header_notice_bar', 'banner');
