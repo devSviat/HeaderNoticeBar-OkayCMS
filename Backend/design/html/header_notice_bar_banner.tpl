@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 {if $smarty.get.return}
-                    <a class="alert__button" href="{$smarty.get.return|escape:'url'}">
+                    <a class="alert__button" href="{$smarty.get.return|escape}">
                         {include file='svg_icon.tpl' svgId='return'}
                         <span>{$btr->general_back|escape}</span>
                     </a>
